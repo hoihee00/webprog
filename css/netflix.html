@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>netflix.html</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: black;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(51, 51, 51);
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .row {
+            color: #f2f2f2;
+        }
+
+        .b1:hover {
+            transform: scale(1.2);
+        }
+        
+        .img {width:325px; height:280px; overflow:hidden }  
+        .scale img { transform:scale(1); transition:transform 0.5s linear;}
+        .scale:hover img { transform:scale(1.1);}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a href="#"><img src="netflix.png" width="70" height="23"></a>
+        <a href="#">홈</a>
+        <a href="#">TV프로그램</a>
+        <a href="#">영화</a>
+        <a href="#">최신 콘텐츠</a>
+        <a href="#">내가 찜한 콘텐츠</a>
+        <a href="#" style="float:right">계정</a>
+        <a href="#" style="float:right">알림</a>
+        <a href="#" style="float:right">찾기</a>
+    </div>
+
+    <h2 style="color: #f2f2f2;">지금 시청하세요!&nbsp;&nbsp;&nbsp;&lt;&lt; 김비서가 왜 그럴까 &gt;&gt;</h3>
+
+    <video autoplay controls loop muted preload="auto" width="95%">
+        <source src="videoplayback.mp4">
+    </video>
+
+    <h2 style="color: #f2f2f2;">내가 찜한 콘텐츠</h2>
+    <span">
+        <span><a href="https://www.netflix.com/watch/80192098?trackId=14170032&tctx=1%2C5%2C75533c3d-8fe2-445d-ba13-b1d0ae1be4cf-64518007%2Cd97263b9-5449-4ac3-958d-2422fa17c8b4_32387832X6XX1600408205658%2Cd97263b9-5449-4ac3-958d-2422fa17c8b4_ROOT%2C">
+            <img src="1.png"></a></span>
+        <span><a href="https://www.netflix.com/watch/70281562?trackId=14170032&tctx=1%2C6%2Ca625963a-877b-4ef9-aca6-809e3ffb321d-71903339%2C2d934ce9-222e-46be-bb51-9c1053ed7d54_20104211X6XX1600413790235%2C2d934ce9-222e-46be-bb51-9c1053ed7d54_ROOT%2C">
+            <img src="2.png"></a></span>
+        <span><a href="https://www.netflix.com/watch/70242311?trackId=14170032&tctx=1%2C57%2Ca625963a-877b-4ef9-aca6-809e3ffb321d-71903339%2C2d934ce9-222e-46be-bb51-9c1053ed7d54_20104211X6XX1600413790235%2C2d934ce9-222e-46be-bb51-9c1053ed7d54_ROOT%2C">
+            <img src="3.png"></a></span>
+        <span><a href="https://www.netflix.com/watch/81193309?trackId=13752289&tctx=0%2C0%2C37eda203a5614157aee86e7b39a10be7028cbfe7%3Aa97695e9b4c6358b7d17358a0c56dd3323bc34d4%2C37eda203a5614157aee86e7b39a10be7028cbfe7%3Aa97695e9b4c6358b7d17358a0c56dd3323bc34d4%2Cunknown%2C">
+            <img src="4.png"></a></span>
+        <span><a href="https://www.netflix.com/watch/80136311?trackId=13752289&tctx=0%2C1%2C478de5effa06a59142e8cbbf4a3a87da86639423%3A565da4a2decc1c8e9c0c25e84583816a6a758d29%2C478de5effa06a59142e8cbbf4a3a87da86639423%3A565da4a2decc1c8e9c0c25e84583816a6a758d29%2Cunknown%2C">
+            <img src="5.png"></a></span>
+        <span><a href="https://www.netflix.com/watch/70143843?trackId=13752289&tctx=0%2C0%2C4759a185966fb4f1fb477668fa3a133abd7060b1%3A674d22a6dc15148643e43a36af65a25e2d0f95bf%2C4759a185966fb4f1fb477668fa3a133abd7060b1%3A674d22a6dc15148643e43a36af65a25e2d0f95bf%2Cunknown%2C">
+            <img src="6.png"></a></span>
+    </span>
+
+    <h2 style="color: #f2f2f2;">오늘 한국의 TOP 10 콘텐츠</h2>
+    <span class="img">
+        <span class="b1"><img src="b1.png" onmouseover="this.src='b-1.png'" onmouseout="src='b1.png'">&nbsp;&nbsp;</span>
+        <span class="b2"><img src="b2.png">&nbsp;&nbsp;</span>
+        <span class="b3"><img src="b3.png">&nbsp;&nbsp;</span>
+        <span class="b4"><img src="b4.png">&nbsp;&nbsp;</span>
+        <span class="b5"><img src="b5.png">&nbsp;&nbsp;</span>
+        <span class="b6"><img src="b6.png">&nbsp;&nbsp;</span>
+
+    </span>
+
+
+
+</body>
+
+</html>
