@@ -38,28 +38,51 @@
             color: black;
         }
 
-        .row {
-            color: #f2f2f2;
-        }
-
-        .b1:hover {
-            transform: scale(1.2);
-        }
 
         .img {
-            width: 325px;
-            height: 280px;
-            overflow: hidden
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
         }
 
-        .scale img {
-            transform: scale(1);
-            transition: transform 0.5s linear;
+        .img .b1 .b2 {
+            visibility: hidden;
+            background-color: rgba(0, 0, 0, 0);
+            position: absolute;
+            bottom: 00%;
+            /* left: 0%; */
+            /* margin-left: -300px; */
+
+            /* Fade in - takes 1 second to go from 0% to 100% opac: */
+            opacity: 0;
+            transition: opacity 2s;
         }
 
-        .scale:hover img {
-            transform: scale(1.1);
+        .b1:hover .b2 {
+            visibility: visible;
+            opacity: 1;
         }
+
+        .img .b3 .b4 {
+            visibility: hidden;
+            background-color: rgba(0, 0, 0, 0);
+            position: absolute;
+            bottom: 00%;
+            /* right: 50%;  */
+            margin-left: -400px;
+
+            /* Fade in - takes 1 second to go from 0% to 100% opac: */
+            opacity: 0;
+            transition: opacity 2s;
+        }
+
+        .b3:hover .b4 {
+            visibility: visible;
+            opacity: 1;
+        }
+
+
+
 
     </style>
 </head>
@@ -108,14 +131,21 @@
 
             <h2 style="color: #f2f2f2;">오늘 한국의 TOP 10 콘텐츠</h2>
             <span class="img">
-                <span class="b1"><img src="b1.png" onmouseover="this.src='b-1.png'"
-                        onmouseout="src='b1.png'">&nbsp;&nbsp;</span>
-                <span class="b2"><img src="b2.png">&nbsp;&nbsp;</span>
-                <span class="b3"><img src="b3.png">&nbsp;&nbsp;</span>
-                <span class="b4"><img src="b4.png">&nbsp;&nbsp;</span>
-                <span class="b5"><img src="b5.png">&nbsp;&nbsp;</span>
-                <span class="b6"><img src="b6.png">&nbsp;&nbsp;</span>
+            <span class="b1"><img src="b1.png">&nbsp;&nbsp;
+                <span class="b2"><img src="b-1.png"></span></span>
+            <span class="b1"><img src="b2.png">&nbsp;&nbsp;
+                <span class="b2"><img src="b-2.png"></span></span>
+            <span class="b1"><img src="b3.png">&nbsp;&nbsp;
+                <span class="b2"><img src="b-3.png"></span></span>
+            </span>
 
+            <span class="img">
+            <span class="b3"><img src="b4.png">&nbsp;&nbsp;
+                <span class="b4"><img src="b-4.png"></span></span>
+            <span class="b3"><img src="b5.png">&nbsp;&nbsp;
+                <span class="b4"><img src="b-5.png"></span></span>
+            <span class="b3"><img src="b6.png">&nbsp;&nbsp;
+                <span class="b4"><img src="b-6.png"></span></span>
             </span>
 
 
